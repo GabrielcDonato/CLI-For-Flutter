@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+Para rodar a CLI sem copilar segue os seguintes comandos:
+cd bin
+dart cli.dart
