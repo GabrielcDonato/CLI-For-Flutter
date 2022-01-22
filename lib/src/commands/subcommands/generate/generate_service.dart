@@ -1,4 +1,6 @@
 import 'package:cli/src/commands/command_base.dart';
+import 'package:cli/src/generators/generate_controller.dart';
+import 'package:cli/src/generators/generate_service.dart';
 
 class GenerateServiceSubCommand extends CommandBase {
   @override
@@ -9,7 +11,7 @@ class GenerateServiceSubCommand extends CommandBase {
 
   @override
   void run() {
-    final nameController = argResults!.rest.first;
-    GenerateService.generate(nameController);
+    final nameService = argResults!.rest.first;
+    GenerateService.generate(nameService);
   }
 }
