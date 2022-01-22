@@ -3,14 +3,7 @@ import 'dart:io';
 String mainDirectory = Directory.current.path;
 
 String formatName(String name) {
-  name = name
-      .replaceAll('_', ' ')
-      .split(' ')
-      .map(
-        (t) => t[0].toUpperCase() + t.substring(1),
-      )
-      .join()
-      .replaceFirst('.dart', '');
+  name = name.replaceAll('_', ' ').split(' ').map((t) => t[0].toUpperCase() + t.substring(1)).join().replaceFirst('.dart', '');
   return name;
 }
 
